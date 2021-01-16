@@ -1,0 +1,128 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+h1 a {
+  text-decoration: none;
+  color: black;
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 3em;
+  position: relative;
+}
+.navbar {
+  margin: 0 5px;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 0;
+  margin-top: 5px;
+  background-color: darkgrey;
+}
+.navbar li {
+  padding: 8px 20px;
+  margin: 3px 0;
+  font-size: 1.2em;
+}
+.navbar li:hover {
+  background-color: black;
+  border-radius: 15px;
+}
+.navbar li a:active {
+  font-size: 120%;
+  color: rgb(230, 200, 104);
+}
+.navbar li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.icons {
+  display: flex;
+  font-size: 30px;
+
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+}
+.icons li a {
+  color: rgba(0, 0, 0, 0.8);
+  padding: 8px 20px;
+}
+h1,
+h2 {
+  text-align: center;
+}
+h2 {
+  margin: 40px auto;
+  font-size: 3em;
+}
+#columns {
+  column-width: 300px;
+  column-gap: 15px;
+}
+#columns:hover figure:not(:hover) {
+  opacity: 0.5;
+}
+#columns figure {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+#columns figure img {
+  width: 100%;
+  height: auto;
+}
+#columns figure figcaption {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 8px 0 0 0;
+  margin-top: 8px;
+}
+#content {
+  text-align: center;
+  width: 35rem;
+  margin: 10px auto;
+}
+#content p {
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: "Nanum Pen Script", cursive;
+}
+#content h3 {
+  font-size: 1.5rem;
+  font-family: "Do Hyeon", sans-serif;
+}
+#photo {
+  margin-top: 5rem;
+}
+@media screen and (max-width: 750px) {
+  #coloumns {
+    column-gap: 0px;
+  }
+  #columns figure {
+    width: 100%;
+  }
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 20px;
+}
+.fa-paw {
+  font-size: 30px;
+  padding-left: 20px;
+  color: rgb(122, 110, 91);
+  padding-top: 35px;
+}
