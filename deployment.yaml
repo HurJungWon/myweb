@@ -17,3 +17,13 @@ spec:
       containers:
       - image: 192.168.1.10:8443/myweb
         name: myweb
+<<<<<<< HEAD
+=======
+        volumeMounts:
+        - name: nfs-vol
+          mountPath: /usr/share/nginx/html
+      volumes:
+      - name: nfs-vol
+        persistentVolumeClaim:
+          claimName: nfs-pvc
+>>>>>>> 6bcd8131415c5eb6a04c4eaa8b713fe09bb1f127
