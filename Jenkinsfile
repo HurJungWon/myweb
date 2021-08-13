@@ -16,7 +16,8 @@ pipeline {
         }
         stage('k8s deploy'){
             steps {
-                kubernetesDeploy(kubeconfigId: 'kubeconfig', configs: '*.yaml')
+                kubernetesDeploy(kubeconfigId: 'kubeconfig', configs: 'deployment.yaml')
+                kubernetesDeploy(kubeconfigId: 'kubeconfig', configs: 'service.yaml')
             }
         }
     }

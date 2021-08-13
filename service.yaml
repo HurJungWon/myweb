@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: gitops-myweb-svc
+spec:
+  selector:
+    app: gitops-myweb
+  ports:
+    - port: 8080
+  type: LoadBalancer
