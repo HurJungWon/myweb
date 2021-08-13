@@ -14,6 +14,10 @@ pipeline {
                 '''
             }
         }
+        stage('k8s pv/pvc'){
+            kubernetesDeploy(kubeconfigId: 'kubeconfig', configs: 'nfs-pv.yaml')
+            kubernetesDeploy(kubeconfigId: 'kubeconfig', configs: 'nfs-pvc.yaml')
+        }
         stage('k8s deploy'){
             steps {
                 kubernetesDeploy(kubeconfigId: 'kubeconfig', configs: 'deployment.yaml')
